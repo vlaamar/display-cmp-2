@@ -1,9 +1,7 @@
-export default function FirstFunct(props) {
-  const { item3 } = props;
-
+export default function FirstFunct({ user }) {
   return (
     <div>
-      Ime: {item3.name}, Godine: {item3.age}
+      Ime: {user.name}, Godine: {user.age}
     </div>
   );
 }

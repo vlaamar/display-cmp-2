@@ -1,9 +1,16 @@
-export default function SecondFunct(props) {
-  const { item4 } = props;
+import PropTypes from "prop-types";
 
+SecondFunct.propTypes = {
+  user: PropTypes.shape({
+    name: PropTypes.string,
+    age: PropTypes.number,
+  }),
+};
+
+export default function SecondFunct({ user }) {
   return (
     <div>
-      Ime: {item4.name}, Godine: {item4.age}
+      Ime: {user.name}, Godine: {user.age}
     </div>
   );
 }

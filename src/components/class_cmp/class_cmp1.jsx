@@ -2,10 +2,10 @@ import React from "react";
 
 export default class FirstClass extends React.Component {
   render() {
-    const { item1 } = this.props;
+    const { user } = this.props;
     return (
       <div>
-        Ime: {item1.name}, Godine: {item1.age}
+        Ime: {user.name}, Godine: {user.age}
       </div>
     );
   }

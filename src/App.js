@@ -14,10 +14,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <FirstClass item1={users[0]} />
-        <SecondClass item2={users[1]} />
-        <FirstFunct item3={users[2]} />
-        <SecondFunct item4={users[3]} />
+        <FirstClass user={users[0]} />
+        <SecondClass user={users[1]} />
+        <FirstFunct user={users[2]} />
+        <SecondFunct user={users[3]} />
       </header>
     </div>
   );
